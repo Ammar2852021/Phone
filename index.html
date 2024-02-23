@@ -1,0 +1,2769 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll Timeline Tweens</title>
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<!-- ScrollTrigger Plugin CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+
+<div class="phone_mac">
+    <div class="iphoneXC iphoneXC1">
+        <div class="layer1"></div>
+        <div class="layer2">
+          <svg class="mouse" viewBox="0 0 384 512" width="100" title="mouse">
+            <path d="M0 352a160 160 0 0 0 160 160h64a160 160 0 0 0 160-160V224H0zM176 0h-16A160 160 0 0 0 0 160v32h176zm48 0h-16v192h176v-32A160 160 0 0 0 224 0z" />
+          </svg>
+          <svg class="arrows" viewBox="0 0 320 512" width="100" title="angle-double-down">
+            <path d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z" />
+          </svg>
+          <span>Scroll</span>
+        </div>
+        <div class="layer3"></div>
+        <div class="layer4">
+          <span class="hw">Hello World</span>
+          <span class="lets txtXC">Let's</span>
+          <span class="hf txtXC">have fun</span>
+          <span class="bc txtXC">be curious</span>
+          <span class="explore txtXC">explore...</span>
+          <div class="home-bar"></div>
+        </div>
+      </div>
+      <div class="iphoneXC iphoneXC2">
+        <div class="layer1"></div>
+        <div class="layer2">
+            <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto; z-index: auto; float: none; flex-shrink: 1; display: flex; margin: 0px; inset: 0px; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 887px; height: 100vh;">
+                <section class="animation" >
+
+
+                <!-- <img class="iphone" src="https://assets.codepen.io/8292695/iphone-14.svg" alt="" /> -->
+      
+                <div class="iphone" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+      
+                  <input name="theme" type="radio" id="deep-purple" checked="checked">
+                  <input name="theme" type="radio" id="gold">
+                  <input name="theme" type="radio" id="space-black">
+                  <input name="theme" type="radio" id="silver">
+                  <input name="theme" type="radio" id="random">
+                  <input name="zoom" type="checkbox" id="zoom">
+                  <div class="scene">
+                    <div class="pallette">
+                      <label class="swatch" tabindex="0" for="deep-purple"></label>
+                      <label class="swatch" tabindex="0" for="gold"></label>
+                      <label class="swatch" tabindex="0" for="space-black"></label>
+                      <label class="swatch" tabindex="0" for="silver"></label>
+                      <label class="swatch" tabindex="0" for="random">
+                        <div class="icon"></div>
+                        <div class="tooltip">CMD + click to save</div>
+                      </label>
+                    </div>
+                    <div class="zoom-con">
+                      <label class="swatch" tabindex="0" for="zoom"></label>
+                    </div>
+                    <div class="phone-con">
+                      <div class="phone">
+                        <div class="buttons">
+                          <div class="left">
+                            <div class="button"></div>
+                            <div class="button"></div>
+                            <div class="button"></div>
+                          </div>
+                          <div class="right">
+                            <div class="button"></div>
+                          </div>
+                        </div>
+                        <div class="camera"></div>
+                        <div class="screen-container">
+                          <div class="bg">
+                            <div class="deep-purple">
+                              <div class="section">
+                                <div class="glow"></div>
+                              </div>
+                              <div class="section">
+                                <div class="glow"></div>
+                              </div>
+                            </div>
+                            <div class="gold">
+                              <div class="section">
+                                <div class="glow"></div>
+                              </div>
+                              <div class="section">
+                                <div class="glow"></div>
+                              </div>
+                            </div>
+                            <div class="space-black">
+                              <div class="section">
+                                <div class="glow"></div>
+                              </div>
+                              <div class="section">
+                                <div class="glow"></div>
+                              </div>
+                            </div>
+                            <div class="silver">
+                              <div class="section">
+                                <div class="glow"></div>
+                              </div>
+                              <div class="section">
+                                <div class="glow"></div>
+                              </div>
+                            </div>
+                            <div class="random canvas">
+                              <div class="shapes">
+                                <div class="shape"></div>
+                                <div class="shape"></div>
+                                <div class="shape"></div>
+                                <div class="shape"></div>
+                                <div class="shape"></div>
+                                <div class="shape"></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notch-container" tabindex="0">
+                            <div class="notch">
+                              <div class="content">
+                                <div class="left">
+                                  <div class="tile"></div>
+                                  <div class="text"></div>
+                                </div>
+                                <div class="right"></div>
+                                <div class="bar">
+                                  <div class="duration"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="notch-blur"></div>
+      
+      
+      
+      
+                          <div class="clock-area">00:49</div>
+                          <div class="widget-area">
+      
+      
+      
+                            <span class="widget">
+                              <a href="https://www.facebook.com/profile.php?id=100024713541158"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                                </svg></a>
+                            </span>
+      
+      
+      
+                            <span class="widget">
+                              <a href="https://www.instagram.com/3mmarx3/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                                </svg>
+                              </a>
+                            </span>
+      
+      
+      
+      
+      
+      
+                            <span class="widget">
+                              <a href="https://www.threads.net/@3mmarx3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
+                                  <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161"></path>
+                                </svg>
+                              </a>
+                            </span>
+      
+      
+      
+                            <span class="widget">
+                              <a href="https://twitter.com/Ammar132004">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"></path>
+                                </svg>
+                              </a>
+                            </span>
+      
+      
+      
+                            <span class="widget"><a href="tel:01070479599">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                                </svg>
+                              </a>
+                            </span>
+      
+      
+      
+                            <span class="widget"> <a href="https://api.whatsapp.com/send/?phone=%2B201065424756&amp;text&amp;type=phone_number&amp;app_absent=0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+                                </svg>
+                              </a></span>
+      
+      
+      
+      
+      
+                          </div>
+      
+      
+                          <style>
+                            .widget-area {
+                              z-index: 999;
+                              display: flex;
+                              gap: 20px;
+                            }
+      
+                            .widget a {
+                              color: white;
+                            }
+                          </style>
+      
+      
+      
+      
+      
+      
+      
+                          <div id="team-members">
+                            <article class="team-member">
+      
+                              <div class="team-member-avatar"></div>
+                              <div class="team-member-name">
+                                <h3>Cosmo Kramer</h3>
+                                <span>New York Man of Mystery</span>
+                              </div>
+                              <ul class="social-links">
+                                <li><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
+                                      <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161">
+                                      </path>
+                                    </svg></a></li>
+                                <li><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
+                                      <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161">
+                                      </path>
+                                    </svg></a></li>
+      
+                              </ul>
+                            </article>
+      
+      
+                            <article class="team-member">
+      
+                              <div class="team-member-avatar"></div>
+                              <div class="team-member-name">
+                                <h3>Cosmo Kramer</h3>
+                                <span>New York Man of Mystery</span>
+                              </div>
+                              <ul class="social-links">
+                                <li><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
+                                      <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161">
+                                      </path>
+                                    </svg></a></li>
+                                <li><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
+                                      <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161">
+                                      </path>
+                                    </svg></a></li>
+      
+                              </ul>
+                            </article>
+      
+      
+      
+                            <article class="team-member">
+      
+                              <div class="team-member-avatar"></div>
+                              <div class="team-member-name">
+                                <h3>Cosmo Kramer</h3>
+                                <span>New York Man of Mystery</span>
+                              </div>
+                              <ul class="social-links">
+                                <li><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
+                                      <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161">
+                                      </path>
+                                    </svg></a></li>
+                                <li><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-threads" viewBox="0 0 16 16">
+                                      <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161">
+                                      </path>
+                                    </svg></a></li>
+      
+                              </ul>
+                            </article>
+                          </div>
+      
+      
+      
+      
+                          <style>
+                            :root {
+                              --background: #EDEEF7;
+                              --gray: #EDEEF7;
+                              --white: #ffffff;
+                              --poppins: "Poppins", sans-serif;
+                              --shadow-opacity: 0.30;
+                              --blur: 10px;
+                            }
+      
+      
+      
+                            *,
+                            *:before,
+                            *:after {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                              outline: none;
+                            }
+      
+                            #team-members {
+                              display: flex;
+                              flex-direction: column;
+                              gap: 10px;
+                              width: 100%;
+                              max-width: 550px;
+                              margin: auto;
+                              padding: 10px;
+      
+      
+                            }
+      
+                            .team-member {
+                              display: flex;
+                              align-items: center;
+                              background: rgba(255, 255, 255, 0.25);
+                              -webkit-backdrop-filter: blur(var(--blur));
+                              backdrop-filter: blur(var(--blur));
+                              border-radius: 10px;
+                              border: 1px solid rgba(255, 255, 255, 0.08);
+                              filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, var(--shadow-opacity)));
+                              padding: 10px;
+                              gap: 10px;
+      
+                            }
+      
+                            .team-member:hover {
+                              cursor: -webkit-grab;
+                              cursor: grab;
+                            }
+      
+                            .team-member-avatar {
+                              width: 50px;
+                              height: 50px;
+                              -o-object-fit: cover;
+                              object-fit: cover;
+                              border-radius: 50%;
+                              background: red;
+                            }
+      
+      
+                            .team-member-name h3 {
+                              font-size: small;
+                            }
+      
+                            .team-member-name p {
+                              font-size: smaller;
+                            }
+      
+                            .team-member-chosen {
+                              box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.3);
+                            }
+      
+                            .team-member-drag {
+                              opacity: 0;
+                            }
+      
+                            .social-links {
+                              display: flex;
+                              flex-direction: row;
+                              gap: 6px;
+                              margin-left: auto;
+                              padding: 0;
+                              list-style-type: none;
+                            }
+      
+                            .social-links i {
+                              width: 1.25rem;
+                              height: 1.25rem;
+                              font-size: 1.25rem;
+                            }
+                          </style>
+                          <script>
+                            const dragAndDropItems = document.getElementById('team-members');
+      
+                            new Sortable(dragAndDropItems, {
+                              animation: 350,
+                              chosenClass: 'team-member-chosen',
+                              dragClass: 'team-member-drag'
+                            });
+                          </script>
+      
+      
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+      
+      
+      
+      
+                <img id="app-store" class="widgets" src="https://assets.codepen.io/8292695/appstore-widget.svg" alt="" style="translate: none; rotate: none; scale: none; transform: translate(500px, 100px) scale(0.9, 0.9); opacity: 1;">
+                <img id="screen-time" class="widgets" src="https://assets.codepen.io/8292695/screen-time-widget.svg" alt="" style="translate: none; rotate: none; scale: none; transform: translate(-500px, -300px) scale(0.9, 0.9); opacity: 1;">
+                <img id="weather" class="widgets" src="https://assets.codepen.io/8292695/weather-widget.svg" alt="" style="translate: none; rotate: none; scale: none; transform: translate(-400px, 350px) scale(1.1, 1.1); opacity: 1;">
+                <img id="stocks" class="widgets" src="https://assets.codepen.io/8292695/stocks-widget.svg" alt="" style="translate: none; rotate: none; scale: none; transform: translate(530px, -170px) scale(0.9, 0.9); opacity: 1;">
+                <img id="calendar" class="widgets" src="https://assets.codepen.io/8292695/calendar-widget.svg" alt="" style="translate: none; rotate: none; scale: none; transform: translate(-630px, 0px) scale(0.9, 0.9); opacity: 1;">
+                <img id="fitness" class="widgets" src="https://assets.codepen.io/8292695/fitness-widget.svg" alt="" style="translate: none; rotate: none; scale: none; transform: translate(-350px, -100px) scale(1.1, 1.1); opacity: 1;">
+                <img id="find-my" class="widgets" src="https://assets.codepen.io/8292695/find-my-widget.svg" alt="" style="translate: none; rotate: none; scale: none; transform: translate(400px, -360px) scale(1.1, 1.1); opacity: 1;">
+                <img id="sleep" class="widgets" src="https://assets.codepen.io/8292695/sleep-widget.svg" alt="" style="translate: none; rotate: none; scale: none; transform: translate(270px, -50px) scale(0.9, 0.9); opacity: 1;">
+                <img id="apple-tv" class="widgets" src="https://assets.codepen.io/8292695/apple-tv.svg" alt="" style="translate: none; rotate: none; scale: none; transform: translate(500px, 300px); opacity: 1;">
+                <img id="wallet" class="widgets" src="https://assets.codepen.io/8292695/wallet.svg" alt="" style="translate: none; rotate: none; scale: none; transform: translate(-280px, 100px); opacity: 1;">
+      
+              </section></div>
+
+              <style>
+
+                @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+:root {
+  --size: max(5px, 1vmin);
+  --height: 80em;
+  --pad: 1.25em;
+  --border-radius: 6.666em;
+  --gutter: calc(var(--pad) * 2);
+  --scene-pad: 5vmin;
+  --bg-blur: 0.333em;
+  --button-width: 0.333em;
+  --notch-height: 3.33em;
+  --notch-width: 33.3%;
+  --notch-radius: calc(var(--border-radius) - calc(var(--pad) * 2));
+  --notch-duration: 0.333s;
+  --ease: cubic-bezier(.666, 0, .4, 1);
+  --ease-spring: cubic-bezier(.666, 0, .4, 1.2);
+  --ease-out: cubic-bezier(.15,0,.333,1);
+  --border-width: 0.4em;
+  --deep-purple: 284;
+  --gold: 22.5;
+  --space-black: 215;
+  --silver: 254;
+  --c-h: var(--deep-purple);
+  --c-s: 100%;
+  --c-l: 50%;
+}
+
+
+.animation {
+    z-index: 999999999999999999999;
+    position: relative;
+}
+
+@-webkit-keyframes appear {
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+body {
+  background: #00000a;
+}
+
+
+.animation{
+    z-index: 9999;
+}
+
+.scene {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em 0;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Inter;
+  font-size: var(--size);
+  padding: var(--scene-pad);
+  box-sizing: border-box;
+}
+
+.phone-con {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 37/76;
+  background: black;
+  height: var(--height);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 0.1em 0.25em hsl(var(--c-h), 20%, 25%), 0 0 0 var(--border-width) hsl(var(--c-h), 30%, 85%);
+  box-sizing: border-box;
+  opacity: 0;
+  transform: scale3d(1.1, 1.1, 1);
+  -webkit-animation: appear 1s var(--ease-out) forwards;
+          animation: appear 1s var(--ease-out) forwards;
+  webkit-backface-visibility: hidden;
+}
+.phone:before {
+  content: "";
+  position: absolute;
+  top: var(--border-radius);
+  right: calc(var(--border-width) * -1);
+  bottom: var(--border-radius);
+  left: calc(var(--border-width) * -1);
+  border: 0.5em solid hsl(var(--c-h), 20%, 30%);
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.buttons {
+  position: absolute;
+  inset: calc(var(--border-width) * -1);
+  pointer-events: none;
+}
+.buttons .left,
+.buttons .right {
+  position: absolute;
+  width: var(--button-width);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5em;
+}
+.buttons .left {
+  right: 100%;
+  top: calc(var(--border-radius) * 2);
+}
+.buttons .left .button:nth-child(1) {
+  height: 3em;
+  margin-bottom: 0.5em;
+}
+.buttons .right {
+  left: 100%;
+  transform: scale3d(-1, 1, 1);
+  top: calc(var(--border-radius) * 3);
+}
+.buttons .right .button {
+  height: 9.5em;
+}
+.buttons .button {
+  background: hsl(var(--c-h), 20%, 95%);
+  height: 6em;
+  box-shadow: inset -0.15em 0 0.1em black, inset 0 0 0.1em hsl(var(--c-h), 30%, 90%), inset 0 0.2em 0.1em hsl(var(--c-h), 30%, 90%), inset 0 -0.2em 0.1em hsl(var(--c-h), 30%, 90%), inset -0.1em 0.333em 0.1em rgba(0, 0, 0, 0.5), inset -0.1em -0.333em 0.1em rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+}
+
+.screen-container {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius);
+  border: var(--pad) solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--pad) * 2);
+}
+.screen-container:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background: white;
+  width: 36.6%;
+  bottom: calc(var(--pad) * 0.75);
+  height: calc(var(--pad) * 0.5);
+  border-radius: calc(var(--pad) * 0.25);
+  filter: drop-shadow(0 0.1em 0.25em rgba(0, 0, 0, 0.1));
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background: black;
+  border-radius: calc(var(--border-radius) - var(--pad));
+  overflow: hidden;
+  transform: translateZ(0);
+}
+.bg > * {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 1s var(--ease-out) 0.5s;
+  background: black;
+}
+.bg .section {
+  --g-h: var(--c-h);
+  --g-s: var(--c-s);
+  --g-l: var(--c-l);
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: calc(var(--border-radius) - var(--pad));
+  border-bottom-left-radius: 20em;
+  border-bottom-right-radius: 20em;
+}
+.bg .section:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(120% 110% at 50% 92.5%, hsla(0deg, 0%, 0%, 1) 33.3%, hsla(0deg, 0%, 0%, 0.738) 45.973%, hsla(0deg, 0%, 0%, 0.541) 55.978%, hsla(0deg, 0%, 0%, 0.382) 64.649%, hsla(0deg, 0%, 0%, 0.278) 70.9855%, hsla(0deg, 0%, 0%, 0.194) 76.655%, hsla(0deg, 0%, 0%, 0.126) 81.991%, hsla(0deg, 0%, 0%, 0.075) 86.7934%, hsla(0deg, 0%, 0%, 0.042) 90.7287%, hsla(0deg, 0%, 0%, 0.021) 93.997%, hsla(0deg, 0%, 0%, 0.008) 96.7984%, hsla(0deg, 0%, 0%, 0.002) 98.7994%, hsla(0deg, 0%, 0%, 0) 100%), radial-gradient(100% 66.6% at 110% var(--g-hue-adjust-2-y, 100%), hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 1) 33.3%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.738) 45.973%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.541) 55.978%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.382) 64.649%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.278) 70.9855%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.194) 76.655%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.126) 81.991%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.075) 86.7934%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.042) 90.7287%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.021) 93.997%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.008) 96.7984%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.002) 98.7994%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0) 100%), radial-gradient(100% 66.6% at -10% var(--g-hue-adjust-2-y, 100%), hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 1) 33.3%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.738) 45.973%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.541) 55.978%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.382) 64.649%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.278) 70.9855%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.194) 76.655%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.126) 81.991%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.075) 86.7934%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.042) 90.7287%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.021) 93.997%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.008) 96.7984%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0.002) 98.7994%, hsla(calc(var(--g-h) - var(--g-hue-adjust-2, var(--g-hue-adjust))), 100%, 50%, 0) 100%), radial-gradient(150% 100% at 50% 80%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0) 35%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.262) 47.35%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.459) 57.1%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.618) 65.55%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.722) 71.725%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.806) 77.25%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.874) 82.45%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.925) 87.13%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.958) 90.965%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.979) 94.15%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.992) 96.88%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 0.998) 98.83%, hsla(calc(var(--g-h) + 33.3), 100%, var(--g-lightness, 82.5%), 1) 100%);
+  background-color: hsl(var(--g-h), var(--g-s), var(--g-l));
+  transform: scale3d(1.1, 1.25, 1);
+  transform-origin: bottom;
+  transition: transform 1s var(--ease-out) 0.5s;
+}
+.bg .section:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: var(--border-width) solid rgba(255, 255, 255, 0.8);
+  border-radius: inherit;
+  filter: blur(0.05em);
+  -webkit-mask-image: radial-gradient(100% 100% at 50% 70%, black 30%, transparent 50%);
+          mask-image: radial-gradient(100% 100% at 50% 70%, black 30%, transparent 50%);
+  transform: translatez(2px);
+}
+.bg .section .glow {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  mix-blend-mode: overlay;
+  z-index: 1;
+  background: radial-gradient(80% 150% at 50% 100%, hsl(var(--g-h), 100%, var(--g-l)), transparent 70%);
+}
+.bg .section:last-of-type {
+  --g-h: calc(var(--c-h) - var(--g-hue-adjust, 0));
+  --g-l: calc(var(--c-l) + 40%);
+  --g-lightness: 95%;
+  transform: scale3d(1, -1, 1) translateZ(1px);
+}
+
+.notch-container {
+  position: absolute;
+  z-index: 3;
+  top: var(--pad);
+  right: var(--pad);
+  left: var(--pad);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  max-height: calc(var(--notch-radius) * 2);
+  pointer-events: none;
+  outline: none;
+  transition: var(--notch-duration) var(--ease);
+  transition-property: max-height, max-width, filter, transform;
+  will-change: max-width, max-height, filter;
+}
+.is-resizing .notch-container, .is-resizing .notch-container * {
+  transition: none;
+}
+.notch-container:hover, .notch-container:focus-within {
+  --shadow-opacity: 0.5;
+  transition-timing-function: var(--ease-spring);
+}
+.notch-container:hover .content, .notch-container:focus-within .content {
+  --content-padding: 2em;
+}
+.notch-container:hover .content .text, .notch-container:focus-within .content .text {
+  opacity: 1;
+}
+.notch-container:hover .notch, .notch-container:focus-within .notch {
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: all;
+  transform: scale3d(1, 1, 1);
+}
+.notch-container:hover ~ .notch-blur, .notch-container:focus-within ~ .notch-blur {
+  opacity: 1;
+  max-height: calc(var(--notch-radius) * 3.333 + var(--pad));
+}
+.notch-container:focus-within {
+  max-height: calc(var(--notch-radius) * 3);
+  --bar-height: 1em;
+  --bar-opacity: 1;
+}
+.notch-container:focus-within .left,
+.notch-container:focus-within .right {
+  max-height: calc(100% - var(--bar-height, 0%) - var(--content-gap));
+}
+.notch-container:focus-within ~ .notch-blur {
+  max-height: calc(var(--notch-radius) * 5);
+  opacity: 1;
+}
+
+.notch-blur {
+  position: absolute;
+  z-index: 2;
+  top: calc(var(--pad) - 3px);
+  right: calc(var(--pad) - 3px);
+  left: calc(var(--pad) - 3px);
+  height: 100%;
+  max-height: calc(var(--notch-radius) * 1.5);
+  -webkit-backdrop-filter: blur(0.2em);
+          backdrop-filter: blur(0.2em);
+  -webkit-mask-image: linear-gradient(to bottom, hsla(0deg, 0%, 0%, 1) 60%, hsla(0deg, 0%, 0%, 0.738) 67.6%, hsla(0deg, 0%, 0%, 0.541) 73.6%, hsla(0deg, 0%, 0%, 0.382) 78.8%, hsla(0deg, 0%, 0%, 0.278) 82.6%, hsla(0deg, 0%, 0%, 0.194) 86%, hsla(0deg, 0%, 0%, 0.126) 89.2%, hsla(0deg, 0%, 0%, 0.075) 92.08%, hsla(0deg, 0%, 0%, 0.042) 94.44%, hsla(0deg, 0%, 0%, 0.021) 96.4%, hsla(0deg, 0%, 0%, 0.008) 98.08%, hsla(0deg, 0%, 0%, 0.002) 99.28%, hsla(0deg, 0%, 0%, 0) 100%);
+          mask-image: linear-gradient(to bottom, hsla(0deg, 0%, 0%, 1) 60%, hsla(0deg, 0%, 0%, 0.738) 67.6%, hsla(0deg, 0%, 0%, 0.541) 73.6%, hsla(0deg, 0%, 0%, 0.382) 78.8%, hsla(0deg, 0%, 0%, 0.278) 82.6%, hsla(0deg, 0%, 0%, 0.194) 86%, hsla(0deg, 0%, 0%, 0.126) 89.2%, hsla(0deg, 0%, 0%, 0.075) 92.08%, hsla(0deg, 0%, 0%, 0.042) 94.44%, hsla(0deg, 0%, 0%, 0.021) 96.4%, hsla(0deg, 0%, 0%, 0.008) 98.08%, hsla(0deg, 0%, 0%, 0.002) 99.28%, hsla(0deg, 0%, 0%, 0) 100%);
+  opacity: 0;
+  border-radius: calc(var(--border-radius) - var(--pad));
+  transition: var(--notch-duration) var(--ease);
+  transition-property: max-height, max-width, opacity, transform;
+  will-change: max-width, max-height;
+}
+
+.notch {
+  position: relative;
+  border-radius: var(--notch-radius);
+  pointer-events: all;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  transition: inherit;
+  transition-property: inherit;
+  will-change: inherit;
+  filter: drop-shadow(0 1em 2em hsla(0 0% 0%/var(--shadow-opacity, 0)));
+  transform: scale3d(0.375, 0.4, 1);
+  transform-origin: top;
+}
+.notch:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: black;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><defs><filter id='round'><feGaussianBlur in='SourceGraphic' stdDeviation='5' result='blur' /><feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9' result='goo'/><feComposite in='SourceGraphic' in2='goo' operator='atop'/></filter></defs></svg>#round");
+  border-radius: inherit;
+}
+
+.content {
+  --content-padding: 1.75em;
+  --duration-height: 0.5em;
+  --content-gap: 1em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: var(--content-padding);
+  gap: var(--content-gap);
+  font-size: 125%;
+  transition-property: padding;
+  will-change: padding;
+  position: relative;
+}
+.content .left,
+.content .right {
+  height: 100%;
+  max-height: calc(100% - var(--bar-height, 0%));
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.content, .content .left, .content .right, .content .bar, .content .text {
+  transition: var(--notch-duration) var(--ease-out);
+}
+.content .left, .content .right, .content .bar {
+  transition-property: max-height, opacity;
+  will-change: max-height;
+}
+.content .left {
+  flex-grow: 2;
+}
+.content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.333em;
+  transition-property: opacity;
+  opacity: var(--bar-opacity, 0);
+}
+.content .text:before {
+  content: "The Move";
+  order: 1;
+  text-transform: uppercase;
+}
+.content .text:after {
+  order: 2;
+  content: "Space Rangers";
+  opacity: 0.5;
+}
+.content .right {
+  flex-grow: 1;
+}
+.content .tile {
+  background: #1a1ab3;
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 33.3%;
+  position: relative;
+}
+.content .tile:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 55% 40%, #131386, #cd1385 75%, transparent) center/133.3% 133.3%;
+  background-color: yellow;
+  filter: blur(0.05em);
+}
+.content .bar {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  flex-basis: 100%;
+  height: 100%;
+  max-height: var(--bar-height, 0%);
+  color: rgba(255, 255, 255, 0.5);
+  opacity: var(--bar-opacity, 0);
+}
+.content .bar .duration {
+  position: relative;
+  height: var(--duration-height);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: calc(var(--duration-height) * 0.5);
+  overflow: hidden;
+  flex-grow: 1;
+}
+.content .bar .duration:before {
+  content: "";
+  height: 100%;
+  background: white;
+  width: 25%;
+  position: absolute;
+}
+.content .bar:before {
+  content: "1:20";
+}
+.content .bar:after {
+  content: "-1:48";
+}
+
+.camera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--notch-height);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  pointer-events: none;
+  position: absolute;
+  z-index: 4;
+  top: calc(var(--pad) * 2);
+  right: calc(50% - calc(var(--notch-width) * 0.5));
+  margin-right: calc(var(--pad) * 0.333);
+}
+.camera:before {
+  content: "";
+  height: 33.3%;
+  aspect-ratio: 1;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0.25em #4c4da3;
+  background: radial-gradient(#6667ac, transparent 50%) no-repeat 33.3% 10%/75% 50%, radial-gradient(#454680, transparent 50%) no-repeat 60% 85%/50% 50%;
+  background-color: #080928;
+}
+
+.screen {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  flex-grow: 1;
+  gap: var(--gutter);
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: var(--gutter);
+  padding-top: calc(var(--gutter) * 3);
+  border-radius: calc(var(--border-radius) - var(--pad));
+  transition: opacity 1s var(--ease-out) 0.25s;
+}
+
+.app {
+  --col: 4;
+  aspect-ratio: 1;
+  border-radius: 20%;
+  flex-basis: 15%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2%;
+  padding: 5%;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  --scale: 1.5;
+  --duration: 0.8s;
+  transform: scale3d(var(--scale), var(--scale), 1);
+  -webkit-animation: appear var(--duration) var(--ease-out) forwards;
+          animation: appear var(--duration) var(--ease-out) forwards;
+}
+.app:nth-child(1), .app:nth-child(2) {
+  flex-basis: 40%;
+  border-radius: 15%;
+  background: linear-gradient(190deg, var(--app-bg-s1, white) 33.3%, var(--app-bg-s2, var(--app-bg-s1, white))) top/100% 125%;
+}
+.app:not(:nth-child(1)):not(:nth-child(2)):before {
+  content: "";
+  background: linear-gradient(190deg, var(--app-bg-s1, white), var(--app-bg-s2, var(--app-bg-s1, white))) top/100% 125%;
+  border-radius: inherit;
+  position: absolute;
+  inset: 0;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><defs><filter id='round'><feGaussianBlur in='SourceGraphic' stdDeviation='5' result='blur' /><feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9' result='goo'/><feComposite in='SourceGraphic' in2='goo' operator='atop'/></filter></defs></svg>#round");
+}
+.app:nth-child(1), .app:nth-child(2), .app:nth-child(3), .app:nth-child(6), .app:nth-child(7), .app:nth-child(10) {
+  --scale: 1.75;
+  --duration: 1s;
+}
+.app:nth-child(1) {
+  --app-bg-s1: #3c74c7;
+  --app-bg-s2: #6490d2;
+  color: white;
+  transform-origin: 125% 200%;
+}
+.app:nth-child(1):after {
+  content: "Sunny";
+}
+.app:nth-child(1) .weather {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+.app:nth-child(1) .weather:before {
+  content: "Oakland";
+}
+.app:nth-child(1) .weather:after {
+  font-size: 225%;
+  content: "80°";
+}
+.app:nth-child(2) {
+  --app-bg-s1: #cbe2ae;
+  --app-bg-s2: #eff6e6;
+  transform-origin: -25% 200%;
+}
+.app:nth-child(2):before {
+  content: "";
+  align-self: flex-end;
+  width: 40%;
+  background: #f8d7a2;
+  border: var(--border-width) solid white;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.app:nth-child(2):after {
+  content: "Hudson Ave";
+  font-weight: 500;
+  margin-top: auto;
+}
+.app:nth-child(3) {
+  --app-bg-s1: #a7f88f;
+  --app-bg-s2: #41c144;
+  transform-origin: 175% 200%;
+}
+.app:nth-child(4) {
+  transform-origin: 75% 230%;
+}
+.app:nth-child(5) {
+  --app-bg-s1: #cecdd5;
+  --app-bg-s2: #89888d;
+  transform-origin: -25% 230%;
+}
+.app:nth-child(6) {
+  --app-bg-s1: #1ac5fb;
+  --app-bg-s2: #1d71f2;
+  transform-origin: -125% 200%;
+}
+.app:nth-child(7) {
+  --app-bg-s1: #fe9b01;
+  --app-bg-s2: #f67324;
+  transform-origin: 175% 80%;
+}
+.app:nth-child(8) {
+  --app-bg-s1: #cb65f0;
+  --app-bg-s2: #8628bb;
+  transform-origin: 75% 100%;
+}
+.app:nth-child(9) {
+  --app-bg-s1: #1d71f2;
+  --app-bg-s2: #1ac8fd;
+  transform-origin: -25% 100%;
+}
+.app:nth-child(10) {
+  transform-origin: -125% 80%;
+}
+
+.pallette {
+  position: relative;
+  z-index: 1;
+  order: 1;
+  display: flex;
+  gap: 2em;
+  margin-right: 2.25em;
+  margin-bottom: -0.25em;
+}
+.pallette:hover ~ .phone-con .screen {
+  transition-delay: 0.5s;
+  opacity: 0;
+}
+
+.zoom-con {
+  order: 1;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  display: none;
+}
+
+.swatch {
+  --swatch-size: max(30px,5em);
+  --border-opacity: 0;
+  background: white;
+  width: var(--swatch-size);
+  height: var(--swatch-size);
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  border: max(1.5px, var(--border-width)) solid black;
+  box-sizing: border-box;
+  background: radial-gradient(100% 100% at 50% 30%, var(--swatch-s1), var(--swatch-s2));
+  opacity: 0;
+  transform: translate3d(0, 20%, 0) scale3d(0.75, 0.75, 1);
+  -webkit-animation: appear 0.333s var(--ease-out) forwards 0.75s;
+          animation: appear 0.333s var(--ease-out) forwards 0.75s;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  outline: none;
+}
+.swatch:before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  border: var(--border-width) solid black;
+  background-image: radial-gradient(400% 300% at 50% 225%, transparent 20%, white);
+}
+.swatch:not([for=zoom]):after {
+  content: "";
+  position: absolute;
+  inset: calc(var(--border-width) * -1);
+  border-width: inherit;
+  border-style: inherit;
+  opacity: var(--border-opacity);
+  transition: 0.25s var(--ease-out);
+  transition-property: opacity;
+  border-radius: inherit;
+}
+.swatch:not([for=zoom]):hover {
+  --border-opacity: 0.666;
+}
+.swatch:not([for=zoom]):focus {
+  --border-opacity: 1;
+}
+.swatch:nth-child(1) {
+  transform-origin: 100% 200%;
+}
+.swatch:nth-child(2) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  transform-origin: 80% 200%;
+}
+.swatch:nth-child(3) {
+  -webkit-animation-delay: 0.85s;
+          animation-delay: 0.85s;
+  transform-origin: 50% 200%;
+}
+.swatch:nth-child(4) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+  transform-origin: 40% 200%;
+}
+.swatch:nth-child(5) {
+  -webkit-animation-delay: 0.95s;
+          animation-delay: 0.95s;
+  transform-origin: 20% 200%;
+}
+.swatch[for=deep-purple] {
+  --swatch-s1: hsl(var(--deep-purple), 100%, 50%);
+  --swatch-s2: hsl(calc(var(--deep-purple) - 60), 100%, 20%);
+}
+.swatch[for=deep-purple]:before {
+  opacity: 0.5;
+}
+.swatch[for=gold] {
+  --swatch-s1: hsl(var(--gold), 100%, 50%);
+  --swatch-s2: hsl(var(--gold), 100%, 50%);
+}
+.swatch[for=space-black] {
+  --swatch-s1: hsl(var(--space-black), 50%, 20%);
+  --swatch-s2: hsl(var(--space-black), 50%, 10%);
+}
+.swatch[for=space-black]:before {
+  opacity: 0.5;
+}
+.swatch[for=silver] {
+  --swatch-s1: hsl(var(--silver), 50%, 80%);
+  --swatch-s2: hsl(var(--silver), 50%, 10%);
+}
+.swatch[for=silver]:before {
+  opacity: 0.75;
+}
+.swatch[for=random] {
+  border-color: rgba(255, 255, 255, 0.25);
+  transition: border-color 0.2s var(--ease-out);
+}
+.swatch[for=random]:before {
+  background: none;
+}
+.swatch[for=random]:hover {
+  border-color: rgba(255, 255, 255, 0.75);
+}
+.swatch[for=random]:hover .icon {
+  opacity: 1;
+}
+.swatch[for=random] .icon {
+  position: absolute;
+  inset: 22.5%;
+  background: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m18 15 3 3m0 0-3 3m3-3h-4l-1-1-1-1h-1m4-13 3 3m0 0-3 3m3-3h-4l-1 1-1 1-6 8-1 1-1 1H3M3 6h4l1 1 1 1 1 1' stroke='%23fff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/contain;
+  opacity: 0.75;
+  transition: opacity 0.2s var(--ease-out);
+}
+#random:not(:checked) ~ .scene .swatch[for=random]:after {
+  border: none;
+}
+#random:checked ~ .scene .swatch[for=random] {
+  --swatch-s1: hsl(var(--r-h), var(--r-s), var(--r-l));
+  --swatch-s2: hsl(var(--r-h), var(--r-s), calc(min(98%, var(--r-l) + 10%)));
+}
+#random:checked ~ .scene .swatch[for=random]:after {
+  border-color: hsl(var(--r-h), 50%, 75%);
+}
+#random:checked ~ .scene .swatch[for=random] .icon {
+  background: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m18 15 3 3m0 0-3 3m3-3h-4l-1-1-1-1h-1m4-13 3 3m0 0-3 3m3-3h-4l-1 1-1 1-6 8-1 1-1 1H3M3 6h4l1 1 1 1 1 1' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/contain;
+}
+#random:checked ~ .scene .swatch[for=random]:hover .tooltip, #random:checked ~ .scene .swatch[for=random]:focus .tooltip {
+  pointer-events: all;
+  opacity: 1;
+}
+.swatch[for=zoom] {
+  --zoom-icon: url("data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m5 27 9-9m-9 9v-9m0 9h9M27 5l-9 9m9-9v9m0-9h-9' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  transform-origin: 40% 200%;
+  border-color: rgba(255, 255, 255, 0.25);
+  transition: border-color 0.2s var(--ease-out);
+}
+.swatch[for=zoom]:before {
+  background: none;
+}
+.swatch[for=zoom]:after {
+  content: "";
+  position: absolute;
+  inset: 22.5%;
+  background: var(--zoom-icon) center/cover;
+  opacity: 0.75;
+  transition: opacity 0.2s var(--ease-out);
+}
+.swatch[for=zoom]:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.swatch[for=zoom]:hover:after {
+  opacity: 1;
+}
+.swatch[for=zoom]:focus {
+  border-color: rgba(255, 255, 255, 0.75);
+}
+.swatch[for=zoom]:focus:after {
+  opacity: 1;
+}
+
+.deep-purple {
+  --c-h: var(--deep-purple);
+  --g-hue-adjust: 40;
+  --g-hue-adjust-2: 45;
+}
+.deep-purple .section:last-of-type {
+  --g-hue-adjust-2-y: 85%;
+}
+
+.gold {
+  --c-h: var(--gold);
+  --g-hue-adjust: 0;
+}
+.gold .section:last-of-type {
+  --g-hue-adjust: 15;
+  --g-hue-adjust-2: -190;
+  --g-lightness: 82.5%;
+}
+
+.space-black {
+  --c-h: var(--space-black);
+  --g-hue-adjust: 0;
+  --g-lightness: 95%;
+}
+.space-black .section:last-of-type {
+  --g-hue-adjust: 215;
+  --g-hue-adjust-2: -215;
+}
+
+.silver {
+  --c-h: var(--silver);
+  --c-s: 10%;
+  --g-hue-adjust: 40;
+  --g-lightness: 95%;
+  --g-hue-adjust-2-y: 85%;
+}
+.silver .section:last-of-type {
+  --g-hue-adjust-2: 15;
+}
+.silver .glow {
+  opacity: 0.25;
+}
+
+label[for=deep-purple]:after {
+  border-color: hsl(var(--deep-purple), 50%, 75%);
+}
+
+#deep-purple:checked ~ .scene .phone .bg .deep-purple {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0s;
+}
+#deep-purple:checked ~ .scene .phone .bg .deep-purple .section:before {
+  transition-delay: 0s;
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+#deep-purple:checked ~ .scene .pallette label[for=deep-purple] {
+  --border-opacity: 1 !important;
+}
+
+label[for=gold]:after {
+  border-color: hsl(var(--gold), 50%, 75%);
+}
+
+#gold:checked ~ .scene .phone .bg .gold {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0s;
+}
+#gold:checked ~ .scene .phone .bg .gold .section:before {
+  transition-delay: 0s;
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+#gold:checked ~ .scene .pallette label[for=gold] {
+  --border-opacity: 1 !important;
+}
+
+label[for=space-black]:after {
+  border-color: hsl(var(--space-black), 50%, 75%);
+}
+
+#space-black:checked ~ .scene .phone .bg .space-black {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0s;
+}
+#space-black:checked ~ .scene .phone .bg .space-black .section:before {
+  transition-delay: 0s;
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+#space-black:checked ~ .scene .pallette label[for=space-black] {
+  --border-opacity: 1 !important;
+}
+
+label[for=silver]:after {
+  border-color: hsl(var(--silver), 50%, 75%);
+}
+
+#silver:checked ~ .scene .phone .bg .silver {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0s;
+}
+#silver:checked ~ .scene .phone .bg .silver .section:before {
+  transition-delay: 0s;
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+#silver:checked ~ .scene .pallette label[for=silver] {
+  --border-opacity: 1 !important;
+}
+
+label[for=random]:after {
+  border-color: hsl(var(--random), 50%, 75%);
+}
+
+#random:checked ~ .scene .phone .bg .random {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0s;
+}
+#random:checked ~ .scene .phone .bg .random .section:before {
+  transition-delay: 0s;
+  transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+#random:checked ~ .scene .pallette label[for=random] {
+  --border-opacity: 1 !important;
+}
+
+#zoom:checked ~ .scene {
+  --size: max(5px, 2vmin);
+  opacity: 0;
+  -webkit-animation: appear 0.5s var(--ease-out) forwards;
+          animation: appear 0.5s var(--ease-out) forwards;
+}
+#zoom:checked ~ .scene .phone {
+  order: 1;
+}
+#zoom:checked ~ .scene .pallette,
+#zoom:checked ~ .scene .zoom-con {
+  order: 0;
+  font-size: 50%;
+}
+#zoom:checked ~ .scene label[for=zoom] {
+  --zoom-icon: url("data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m14 18-9 9m9-9v9m0-9H5M18 14l9-9m-9 9V5m0 9h9' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+#zoom:not(:checked) ~ .scene {
+  opacity: 0;
+  -webkit-animation: appear-again 0.5s var(--ease-out) forwards;
+          animation: appear-again 0.5s var(--ease-out) forwards;
+}
+@-webkit-keyframes appear-again {
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+@keyframes appear-again {
+  to {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+
+.random {
+  background: hsl(var(--r-h), var(--r-s), var(--r-l));
+}
+.random--colourful {
+  --bm-outer: overlay;
+  --bm-inner: difference;
+}
+.random--moody {
+  --bm-outer: exclusion;
+  --bm-inner: multiply;
+}
+.random--neon {
+  --bm-outer: hue;
+  --bm-inner: multiply;
+}
+.random--abstract {
+  --bm-outer: color-burn;
+  --bm-inner: difference;
+}
+.random--grayscale {
+  --bm-outer: color-burn;
+  --bm-inner: difference;
+  filter: brightness(1.2) grayscale(100%) contrast(2);
+}
+.random--light-leak {
+  --bm-outer: color-burn;
+  --bm-inner: multiply;
+}
+
+.shapes {
+  mix-blend-mode: var(--bm-outer, overlay);
+  background: hsl(var(--r-h), var(--r-s), 85%);
+  position: absolute;
+  inset: 0%;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.shape {
+  position: absolute;
+  pointer-events: none;
+  transition-property: background, inset, border-radius, filter, transform;
+  will-change: inset, border-radius, filter;
+  mix-blend-mode: var(--bm-inner, difference);
+  top: 50%;
+  left: 50%;
+  aspect-ratio: 1/1;
+  background: hsl(var(--r-h), var(--r-s), var(--r-l));
+  width: var(--w, 99%);
+  border-radius: var(--b-r, 55%);
+  filter: blur(var(--b));
+  transform: translate3d(calc(var(--x, -1%) - 50%), calc(var(--y, -8%) - 50%), 0) scale3d(var(--s-x, 1.9), var(--s-y, 1.15), 1) rotate(var(--r, 260deg));
+}
+
+.tooltip {
+  --t-caret: 0.5em;
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + var(--t-caret) + 0.5em);
+  white-space: nowrap;
+  background: black;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0.25em;
+  font-size: max(11px, 1em);
+  border-radius: 0.25em;
+  border: 1px solid #404040;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s var(--ease);
+}
+.tooltip:after {
+  content: "";
+  position: absolute;
+  bottom: calc(100% - calc(var(--t-caret) / 2) - 1px);
+  left: calc(50% - calc(var(--t-caret) / 2));
+  border-radius: inherit;
+  height: var(--t-caret);
+  width: var(--t-caret);
+  background: inherit;
+  border: inherit;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(-135deg);
+}
+#zoom:checked ~ .scene .tooltip {
+  top: unset;
+  bottom: calc(100% + var(--t-caret) + 0.5em);
+}
+#zoom:checked ~ .scene .tooltip:after {
+  transform: rotate(45deg);
+  top: calc(100% - calc(var(--t-caret) / 2) - 1px);
+  bottom: unset;
+}
+              </style>
+        </div>
+    
+      </div>
+      <div class="tv tv1">
+        <div class="stand">
+          <div class="neck">
+            <div class="neckL"></div>
+            <div class="neckR"></div>
+          </div>
+          <div class="base"></div>
+        </div>
+        <div class="layer1"></div>
+        <div class="layer2">
+          <video src="https://www.apple.com/105/media/us/apple-tv-4k/2023/a128dbc4-3800-4bf9-9ccc-5a6c86669715/anim/tv+-sizzle/large.mp4" autoplay loop playsinline muted></video>
+        </div>
+        <div class="layer3"></div>
+        <div class="layer4">
+          <img class="appleTV" src="https://www.apple.com/v/apple-tv-4k/ah/images/overview/rooms/apple_tv_plus_logo__fjf3mdmyewmu_small.png" />
+          <div class="pill">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <span class="up-next">Up Next</span>
+          <div class="movies">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Ze8uZ-TWJ2JMbqmtcz8_BA/670x377.webp" />
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/FVXovQ_qyfe9iwKjx4dRxA/670x377.webp" />
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/ageP1PYyLi7UlNiWMva32Q/738x416.webp" />
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/rss8pF-klNy76S-NWFue-A/670x377.webp" />
+          </div>
+        </div>
+      </div>
+      <div class="macbook macbook1">
+        <div class="base">
+          <div class="keyboard">
+            <div class="row">
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="md-key"></div>
+            </div>
+            <div class="row">
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+            </div>
+            <div class="row">
+              <div class="md-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="md-key"></div>
+            </div>
+            <div class="row">
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="lg-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+              <div class="sm-key"></div>
+            </div>
+          </div>
+          <div class="trackpad"></div>
+        </div>
+        <div class="layer1"></div>
+        <div class="layer2">
+          <video src="https://www.apple.com/105/media/us/airpods-pro/2022/d2deeb8e-83eb-48ea-9721-f567cf0fffa8/anim/spatial-audio/medium.mp4#t=3.491224" autoplay loop playsinline muted></video>
+        </div>
+        <div class="layer3"></div>
+        <div class="layer4">
+          <span class="title">Apple AirPods Pro (2nd Generation)</span>
+          <div class="menu">
+            <div class="progress">
+              <div class="bar"></div>
+            </div>
+            <div class="controls">
+              <svg class="pause" viewBox="0 0 448 512" title="pause">
+                <path d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
+              </svg>
+              <svg class="forward" viewBox="0 0 448 512" title="step-forward">
+                <path d="M384 44v424c0 6.6-5.4 12-12 12h-48c-6.6 0-12-5.4-12-12V291.6l-195.5 181C95.9 489.7 64 475.4 64 448V64c0-27.4 31.9-41.7 52.5-24.6L312 219.3V44c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12z" />
+              </svg>
+              <svg class="volume" viewBox="0 0 576 512" title="volume-up">
+                <path d="M215.03 71.05L126.06 160H24c-13.26 0-24 10.74-24 24v144c0 13.25 10.74 24 24 24h102.06l88.97 88.95c15.03 15.03 40.97 4.47 40.97-16.97V88.02c0-21.46-25.96-31.98-40.97-16.97zm233.32-51.08c-11.17-7.33-26.18-4.24-33.51 6.95-7.34 11.17-4.22 26.18 6.95 33.51 66.27 43.49 105.82 116.6 105.82 195.58 0 78.98-39.55 152.09-105.82 195.58-11.17 7.32-14.29 22.34-6.95 33.5 7.04 10.71 21.93 14.56 33.51 6.95C528.27 439.58 576 351.33 576 256S528.27 72.43 448.35 19.97zM480 256c0-63.53-32.06-121.94-85.77-156.24-11.19-7.14-26.03-3.82-33.12 7.46s-3.78 26.21 7.41 33.36C408.27 165.97 432 209.11 432 256s-23.73 90.03-63.48 115.42c-11.19 7.14-14.5 22.07-7.41 33.36 6.51 10.36 21.12 15.14 33.12 7.46C447.94 377.94 480 319.54 480 256zm-141.77-76.87c-11.58-6.33-26.19-2.16-32.61 9.45-6.39 11.61-2.16 26.2 9.45 32.61C327.98 228.28 336 241.63 336 256c0 14.38-8.02 27.72-20.92 34.81-11.61 6.41-15.84 21-9.45 32.61 6.43 11.66 21.05 15.8 32.61 9.45 28.23-15.55 45.77-45 45.77-76.88s-17.54-61.32-45.78-76.86z" />
+              </svg>
+              <svg class="cc" viewBox="0 0 512 512" title="closed-captioning">
+                <path d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM218.1 287.7c2.8-2.5 7.1-2.1 9.2.9l19.5 27.7c1.7 2.4 1.5 5.6-.5 7.7-53.6 56.8-172.8 32.1-172.8-67.9 0-97.3 121.7-119.5 172.5-70.1 2.1 2 2.5 3.2 1 5.7l-17.5 30.5c-1.9 3.1-6.2 4-9.1 1.7-40.8-32-94.6-14.9-94.6 31.2.1 48 51.1 70.5 92.3 32.6zm190.4 0c2.8-2.5 7.1-2.1 9.2.9l19.5 27.7c1.7 2.4 1.5 5.6-.5 7.7-53.5 56.9-172.7 32.1-172.7-67.9 0-97.3 121.7-119.5 172.5-70.1 2.1 2 2.5 3.2 1 5.7L420 222.2c-1.9 3.1-6.2 4-9.1 1.7-40.8-32-94.6-14.9-94.6 31.2 0 48 51 70.5 92.2 32.6z" />
+              </svg>
+              <svg class="fullscreen" viewBox="0 0 448 512" title="expand">
+                <path d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="end-text">
+        <span class="thanks">Thanks for scrolling!</span>
+        <span><a href="https://bento.me/gibsonmurray" target="_blank"><b>This</b></a>
+          is a link to my portfolio</span>
+        <span><a href="https://natesmith.design/" target="_blank"><b>This</b></a>
+          is a link to the original effect</span>
+      </div>
+
+</div>
+
+
+
+      <style>
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.phone_mac {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphoneXC {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+
+  > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+}
+
+.iphoneXC1 {
+  overflow: hidden;
+  opacity: 0;
+
+  .layer1 {
+    background-color: #c4cdd1;
+  }
+
+  .layer2 {
+    width: 260px;
+    height: 550px;
+    background-color: #e1e5e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      position: absolute;
+      bottom: 70px;
+      font-size: 20px;
+      font-family: serif;
+      color: gray;
+    }
+
+    .mouse {
+      position: absolute;
+      height: 32px;
+      fill: gray;
+    }
+
+    .arrows {
+      position: absolute;
+      height: 40px;
+      transform: translateY(40px);
+      fill: gray;
+    }
+  }
+
+  .layer3 {
+    height: 510px;
+    bottom: -510px;
+    background-color: #7856f0;
+  }
+
+  .layer4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+
+    .hw {
+      color: #f0f1f6;
+      font-family: sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      opacity: 0;
+      position: absolute;
+    }
+
+    .home-bar {
+      position: absolute;
+      bottom: 10px;
+      width: 80px;
+      height: 5px;
+      background-color: #0f0f0f;
+      border-radius: 9999px;
+    }
+
+    .txtXC {
+      position: absolute;
+      color: #f0f1f6;
+      font-family: serif;
+      font-size: 20px;
+      opacity: 0;
+    }
+  }
+}
+
+.iphoneXC2 {
+  opacity: 0;
+
+  /* .layer1 {
+    background-color: #39363f;
+  } */
+
+  .layer2 {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    video {
+      height: 100%;
+      opacity: 0.7;
+    }
+  }
+
+  .layer3 {
+    background: linear-gradient(rgba(0, 0, 0, 0), #191211 87%);
+  }
+
+  .layer4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .fingerprint {
+      position: absolute;
+      fill: rgb(255, 255, 255);
+      height: 80px;
+    }
+
+    .future {
+      position: absolute;
+      font-family: serif;
+      color: white;
+      width: 200px;
+      text-align: center;
+      font-size: 18px;
+      transform: translateY(160px);
+    }
+  }
+}
+
+.tv {
+  position: absolute;
+  width: 504px;
+  height: 290px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+
+  > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+
+  .stand {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(120px);
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    opacity: 0;
+
+    .neck {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 180px;
+
+      .neckL,
+      .neckR {
+        width: 10px;
+        height: 30px;
+        background-color: #39363f;
+      }
+    }
+
+    .base {
+      width: 300px;
+      height: 6px;
+      border-radius: 9999px;
+      background-color: #39363f;
+    }
+  }
+}
+
+.tv1 {
+  opacity: 0;
+
+  .layer1 {
+    background-color: #39363f;
+  }
+
+  .layer2 {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    video {
+      width: 490px;
+      border-radius: inherit;
+      opacity: 0.7;
+    }
+  }
+
+  .layer3 {
+    width: 97.5%;
+    height: 96%;
+    background: linear-gradient(rgba(0, 0, 0, 0) 60%, #191211 98%);
+  }
+
+  .layer4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+
+    .appleTV {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      filter: invert();
+      opacity: 0.7;
+    }
+
+    .pill {
+      position: absolute;
+      height: 10px;
+      width: 70px;
+      bottom: 100px;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      border-radius: 9999px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      > * {
+        aspect-ratio: 1;
+        height: 4px;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      .dot:nth-child(3) {
+        background: rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    .up-next {
+      position: absolute;
+      left: 22px;
+      bottom: 86px;
+      font-family: sans-serif;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: bolder;
+    }
+
+    .movies {
+      width: 100%;
+      height: 60px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      > * {
+        height: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.macbook {
+  position: absolute;
+  width: 480px;
+  aspect-ratio: 1.6;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  transform: translateY(-50px);
+  opacity: 0;
+
+  > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
+
+  .layer1 {
+    background-color: #39363f;
+  }
+
+  .base {
+    width: 544px;
+    background-color: #e1e5e8;
+    transform: translateY(198px) rotateX(80deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+
+    .keyboard {
+      width: 480px;
+      height: 170px;
+      border-radius: 10px;
+      background-color: #2c2a31;
+      padding: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+
+      .row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+
+        .sm-key,
+        .md-key,
+        .lg-key {
+          background-color: #393939;
+          height: 34px;
+          border-radius: 5px;
+        }
+
+        .sm-key {
+          width: 40px;
+        }
+
+        .md-key {
+          width: 80px;
+        }
+
+        .lg-key {
+          width: 220px;
+        }
+      }
+    }
+
+    .trackpad {
+      width: 200px;
+      height: 90px;
+      border-radius: 10px;
+      background-color: #bfc3c7;
+    }
+  }
+}
+
+.macbook1 {
+  .layer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 464px;
+    height: 284px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    video {
+      height: 100%;
+    }
+  }
+
+  .layer3 {
+    width: 464px;
+    height: 284px;
+    border-radius: 10px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.4) 2%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0.4) 98%
+    );
+  }
+
+  .layer4 {
+    width: 464px;
+    height: 284px;
+
+    .title {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      font-family: sans-serif;
+      color: #f0f1f6;
+    }
+
+    .menu {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .progress {
+        position: absolute;
+        bottom: 28px;
+        width: 96%;
+        height: 3px;
+        background-color: #2c2a31;
+        border-radius: 9999px;
+
+        .bar {
+          height: 100%;
+          width: 33%;
+          border-radius: inherit;
+          background-color: #f0f1f6;
+        }
+      }
+
+      .m{
+        height: 100vh;
+        width: 100vw;
+        background: red;
+
+      }
+
+      .controls {
+        position: relative;
+        margin-bottom: 6px;
+        height: 14px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > * {
+          position: absolute;
+          fill: #f0f1f6;
+          height: 100%;
+        }
+
+        .pause {
+          left: 14px;
+        }
+
+        .forward {
+          left: 40px;
+        }
+
+        .volume {
+          left: 64px;
+        }
+
+        .cc {
+          right: 40px;
+        }
+
+        .fullscreen {
+          right: 14px;
+        }
+      }
+    }
+  }
+}
+
+.end-text {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  z-index: 9999;
+  opacity: 0;
+
+  span {
+    font-family: sans-serif;
+
+    a {
+      color: #7856f0;
+      text-decoration: none;
+    }
+  }
+
+  .thanks {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+      </style>
+    
+
+    <script>
+        /**
+ * Hi all!
+ * The vast majority of this code is scroll timeline tweens.
+ * I labeled each scroll timeline section with what it is doing
+ * As you scroll down the code, the tweens play in order of
+ * what happens when scrolling on the site.
+ *
+ * Comment for any clarification, I'd be happy to assist!
+ * Thanks for checking this out!
+ *
+ * My Portfolio: https://bento.me/gibsonmurray
+ * Inspiration: https://natesmith.design/
+ */
+
+/* <----- SECTION I: INITIAL POSITIONS OF ELEMENTS -----> */
+
+// --- INITIAL POSITIONS OF iphoneXC 1 TEXT ---
+gsap.set(".txtXC", {
+  y: "+=160"
+});
+gsap.set(".lets", {
+  x: "-=39"
+});
+gsap.set(".hf", {
+  x: "+=20"
+});
+gsap.set(".bc", {
+  x: "+=20"
+});
+gsap.set(".explore", {
+  x: "+=20"
+});
+gsap.set(".bc, .explore", {
+  rotateX: "-=90"
+});
+
+// --- INITIAL POSITIONS OF iphoneXC 2 ---
+gsap.set(".iphoneXC2 > .layer1", {
+  x: "+=30"
+});
+gsap.set(".iphoneXC2 > .layer2", {
+  x: "+=60"
+});
+gsap.set(".iphoneXC2 > .layer3", {
+  x: "+=90"
+});
+gsap.set(".iphoneXC2 > .layer4", {
+  x: "+=120"
+});
+gsap.set(".iphoneXC2 > *", {
+  rotateY: "+=90"
+});
+
+// --- INITIAL POSITIONS OF TV ---
+gsap.set(".tv1 > *", {
+  rotateX: "-=90",
+  rotateZ: "-=60"
+});
+gsap.set(".tv1 > .layer1", {
+  x: "+=30",
+  y: "+=30"
+});
+gsap.set(".tv1 > .layer2", {
+  x: "+=60",
+  y: "+=60"
+});
+gsap.set(".tv1 > .layer3", {
+  x: "+=90",
+  y: "+=90"
+});
+gsap.set(".tv1 > .layer4", {
+  x: "+=120",
+  y: "+=120"
+});
+
+// --- INITIAL POSITIONS OF MACBOOK ---
+gsap.set(".macbook1", {
+  y: "+=50"
+});
+gsap.set(".macbook1 > .layer1", {
+  y: "+=30"
+});
+gsap.set(".macbook1 > .layer2", {
+  y: "+=60"
+});
+gsap.set(".macbook1 > .layer3", {
+  y: "+=90"
+});
+gsap.set(".macbook1 > .layer4", {
+  y: "+=120"
+});
+gsap.set(
+  ".macbook1 > .layer1, .macbook1 > .layer2, .macbook1 > .layer3, .macbook1 > .layer4",
+  {
+    rotateX: "-=90"
+  }
+);
+gsap.set(".macbook1 > .base", {
+  y: "-=90",
+  z: "-=700"
+});
+
+// --- INITIAL TRANSITION TO SHOW FIRST iphoneXC ---
+const initAnimation = gsap
+  .timeline()
+  .set(".iphoneXC1", {
+    scale: 0.9,
+    y: "+=50"
+  })
+  .to(".iphoneXC1", {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    duration: 1,
+    ease: "elastic.out(1, 0.8)",
+    delay: 1
+  })
+  .fromTo(
+    ".layer2 > .mouse, .layer2 > .arrows",
+    {
+      opacity: 0
+    },
+    {
+      opacity: 1
+    },
+    "<0.5"
+  )
+  .fromTo(
+    ".layer2 > span",
+    {
+      opacity: 0
+    },
+    {
+      opacity: 1
+    },
+    "<0.3"
+  )
+  .to(
+    ".layer2 > .arrows",
+    {
+      y: "+=10",
+      ease: "sine.inOut",
+      duration: 1.3,
+      repeat: -1,
+      yoyo: true
+    },
+    0
+  );
+
+/* <----- SECTION 2: ANIMATIONS / TWEENS ----> */
+
+// --- INIT TIMELINE AND FIRST iphoneXC TEXT ---
+const scroll = gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "body",
+      scrub: 0.5,
+      pin: true,
+      end: "+=6500" // length of animation determined by length of scroll
+    },
+    defaults: { ease: "none" } // gsap defaults to an ease of "power1.out"
+  })
+  .to(".iphoneXC1 > .layer3", {
+    bottom: 0
+  })
+  .to(
+    ".iphoneXC1 > .layer4 > .home-bar",
+    {
+      backgroundColor: "#f0f1f6",
+      duration: 0.008
+    },
+    "<0.004"
+  )
+  .to(
+    ".iphoneXC1 > .layer2",
+    {
+      scale: 0.89,
+      duration: 0.35
+    },
+    "<0.15"
+  )
+  .to(".iphoneXC1 > .layer4 > .hw", {
+    opacity: 1,
+    y: "-=100",
+    rotateX: 360,
+    ease: "elastic.out(1, 1)"
+  })
+  .to(".lets, .hf", {
+    opacity: 1,
+    y: "-=10"
+  })
+  .to(".hf", {
+    rotateX: "+=90",
+    y: "-=10",
+    opacity: 0
+  })
+  .to(
+    ".bc",
+    {
+      rotateX: "+=90",
+      y: "-=10",
+      opacity: 1
+    },
+    "<"
+  )
+  .to(
+    ".lets",
+    {
+      x: "-=7"
+    },
+    "<"
+  )
+  .to(".bc", {
+    rotateX: "+=90",
+    y: "-=10",
+    opacity: 0
+  })
+  .to(
+    ".explore",
+    {
+      rotateX: "+=90",
+      y: "-=10",
+      opacity: 1
+    },
+    "<"
+  )
+  .to(
+    ".lets",
+    {
+      x: "+=4"
+    },
+    "<"
+  );
+
+// --- TRANSITION TO NEXT iphoneXC ---
+scroll
+  .set(".iphoneXC1", {
+    overflow: "visible"
+  })
+  .to(".iphoneXC1 > *", {
+    rotateY: -90,
+    delay: 1.2
+  })
+  .to(
+    ".iphoneXC1 > .layer1",
+    {
+      x: "-=30"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC1 > .layer2",
+    {
+      x: "-=60"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC1 > .layer3",
+    {
+      x: "-=90"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC1 > .layer4",
+    {
+      x: "-=120"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC1 > *",
+    {
+      opacity: 0,
+      duration: 0.05
+    },
+    "<0.36"
+  )
+  .to(
+    ".iphoneXC2 > *",
+    {
+      rotateY: "-=90"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC2",
+    {
+      opacity: 1,
+      duration: 0.05
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC2 > .layer1",
+    {
+      x: "-=30"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC2 > .layer2",
+    {
+      x: "-=60"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC2 > .layer3",
+    {
+      x: "-=90"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC2 > .layer4",
+    {
+      x: "-=120"
+    },
+    "<"
+  );
+
+// --- TRANSITION TO TV ---
+scroll
+  .to(".iphoneXC2 > *", {
+    rotateY: "-=90",
+    rotateZ: "+=45",
+    delay: 1.2
+  })
+  .to(
+    ".iphoneXC2 > .layer1",
+    {
+      x: "-=30",
+      y: "-=30"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC2 > .layer2",
+    {
+      x: "-=60",
+      y: "-=60"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC2 > .layer3",
+    {
+      x: "-=90",
+      y: "-=90"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC2 > .layer4",
+    {
+      x: "-=120",
+      y: "-=120"
+    },
+    "<"
+  )
+  .to(
+    ".iphoneXC2 > *",
+    {
+      opacity: 0,
+      duration: 0.05
+    },
+    "<0.36"
+  )
+  .to(
+    ".tv1 > *",
+    {
+      rotateX: "+=90",
+      rotateZ: "+=60"
+    },
+    "<"
+  )
+  .to(
+    ".tv1",
+    {
+      y: "-=30"
+    },
+    "<"
+  )
+  .to(
+    ".tv1",
+    {
+      opacity: 1,
+      duration: 0.05
+    },
+    "<"
+  )
+  .to(
+    ".tv1 > .layer1",
+    {
+      x: "-=30",
+      y: "-=30"
+    },
+    "<"
+  )
+  .to(
+    ".tv1 > .layer2",
+    {
+      x: "-=60",
+      y: "-=60"
+    },
+    "<"
+  )
+  .to(
+    ".tv1 > .layer3",
+    {
+      x: "-=90",
+      y: "-=90"
+    },
+    "<"
+  )
+  .to(
+    ".tv1 > .layer4",
+    {
+      x: "-=120",
+      y: "-=120"
+    },
+    "<"
+  )
+  .set(
+    ".tv1 > .stand",
+    {
+      opacity: 1
+    },
+    "<0.2"
+  )
+  .to(
+    ".tv1 > .stand",
+    {
+      y: "+=40",
+      duration: 0.2
+    },
+    "<0.1"
+  );
+
+// --- TRANSITION TO MACBOOK ---
+scroll
+  .to(".tv1 > *", {
+    rotateX: "+=90",
+    delay: 1.2
+  })
+  .to(
+    ".tv1 > .layer1",
+    {
+      y: "-=30"
+    },
+    "<"
+  )
+  .to(
+    ".tv1 > .layer2",
+    {
+      y: "-=60"
+    },
+    "<"
+  )
+  .to(
+    ".tv1 > .layer3",
+    {
+      y: "-=90"
+    },
+    "<"
+  )
+  .to(
+    ".tv1 > .layer4",
+    {
+      y: "-=120"
+    },
+    "<"
+  )
+  .to(
+    ".tv1 > .stand",
+    {
+      y: "-=193"
+    },
+    "<"
+  )
+  .to(
+    ".tv1 > *",
+    {
+      opacity: 0,
+      duration: 0.05
+    },
+    "<0.36"
+  )
+  .to(
+    ".macbook1 > .layer1, .macbook1 > .layer2, .macbook1 > .layer3, .macbook1 > .layer4",
+    {
+      rotateX: "+=90"
+    },
+    "<"
+  )
+  .to(
+    ".macbook1",
+    {
+      y: "-=50"
+    },
+    "<"
+  )
+  .to(
+    ".macbook1",
+    {
+      opacity: 1,
+      duration: 0.05
+    },
+    "<"
+  )
+  .to(
+    ".macbook1 > .layer1",
+    {
+      y: "-=30"
+    },
+    "<"
+  )
+  .to(
+    ".macbook1 > .layer2",
+    {
+      y: "-=60"
+    },
+    "<"
+  )
+  .to(
+    ".macbook1 > .layer3",
+    {
+      y: "-=90"
+    },
+    "<"
+  )
+  .to(
+    ".macbook1 > .layer4",
+    {
+      y: "-=120"
+    },
+    "<"
+  )
+  .set(
+    ".macbook1 > .base",
+    {
+      opacity: 1
+    },
+    ">-0.4"
+  )
+  .to(
+    ".macbook1 > .base",
+    {
+      y: "+=90",
+      z: "+=700",
+      duration: 0.4
+    },
+    "<"
+  );
+
+// --- TRANSITION OUT ---
+scroll
+  .to(
+    ".macbook1 > .layer1, .macbook1 > .layer2, .macbook1 > .layer3, .macbook1 > .layer4",
+    {
+      rotateX: "+=90",
+      delay: 1.2
+    }
+  )
+  .to(
+    ".macbook1",
+    {
+      y: "-=50"
+    },
+    "<"
+  )
+
+  .to(
+    ".macbook1 > .layer1",
+    {
+      y: "-=30"
+    },
+    "<"
+  )
+  .to(
+    ".macbook1 > .layer2",
+    {
+      y: "-=60"
+    },
+    "<"
+  )
+  .to(
+    ".macbook1 > .layer3",
+    {
+      y: "-=90"
+    },
+    "<"
+  )
+  .to(
+    ".macbook1 > .layer4",
+    {
+      y: "-=120"
+    },
+    "<"
+  )
+  .to(
+    ".macbook1 > .base",
+    {
+      rotateX: "+=9",
+      z: "-=500",
+      duration: 0.6
+    },
+    "<"
+  )
+  .to(
+    ".macbook1 > .base",
+    {
+      y: "-=260",
+      duration: 0.5,
+      ease: "sine.in"
+    },
+    "<"
+  )
+  .to(
+    ".macbook1",
+    {
+      opacity: 0,
+      duration: 0.05
+    },
+    "<0.43"
+  );
+
+// --- TRANSITION TO SHOW ENDING TEXT ---
+scroll
+  .set(".end-text", {
+    display: "none"
+  })
+  .set(".end-text", {
+    display: "flex"
+  })
+  .to(".end-text", {
+    opacity: 1
+  });
+
+/* <----- SECTION 3: COMBINING TIMELINES & PLAYING ANIMATION ----> */
+const main = gsap.timeline().add(initAnimation).add(scroll);
+main.play();
+
+    </script>
+</body>
+</html>
+
+
+
+
+<!--  -->
